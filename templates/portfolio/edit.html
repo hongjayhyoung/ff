@@ -1,0 +1,10 @@
+<head>
+</head>
+<body>
+    <h1>수정 글</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="brn brn-secondary">저장</button>
+    </form>
+</body>

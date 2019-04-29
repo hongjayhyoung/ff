@@ -1,0 +1,13 @@
+<head>
+    <title>멋쟁이 사자처럼 과제물</title>
+</head>
+<body>
+    <h1>home</h1>
+    {% for person in person.all %}
+        <div class="container">
+            <h2>{{person.title}}</h2>>
+            <p>{{person.text}}</p>
+        </div>
+    {% endfor %}
+    <a href="{% url 'new'%}">글쓰기</a>
+</body>
